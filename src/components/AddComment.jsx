@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import SingleBook from "./SingleBook";
+//import SingleBook from "./SingleBook";
 
 const url = "https://striveschool-api.herokuapp.com/api/comments/";
 class AddComment extends Component {

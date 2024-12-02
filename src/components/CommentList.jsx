@@ -1,9 +1,17 @@
+import { ListGroupItem } from "react-bootstrap";
 import ListGroup from "react-bootstrap/ListGroup";
+//import SingleComment from "./SingleComment";
 
-const CommentList = (prop) => {
+const CommentList = ({ commentToShow }) => {
+  console.log(commentToShow);
   return (
     <ListGroup>
-      <ListGroup.Item>{prop.comments}</ListGroup.Item>
+      {commentToShow.map((comment) => (
+        <ListGroupItem key={comment._id}>
+          {comment.author}--
+          {comment.comment}
+        </ListGroupItem>
+      ))}
     </ListGroup>
   );
 };
